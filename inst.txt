@@ -1,0 +1,10 @@
+how can run flex file :
+flex fileName.l
+g++ fileThatGeneratedFrom step 1
+write name of exe file 
+====
+bison + flex 
+bison -d -o pars.tab.c pars.y
+flex -o lex.yy.c scan.l
+gcc pars.tab.c lex.yy.c -o calculator.exe -lm
+./calculator.exe < input.txt
